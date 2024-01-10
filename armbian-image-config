@@ -13,18 +13,30 @@
 #
 
 IFS=
-AIC_VER="0.3"
+AIC_VER="0.31"
 AIC_MNT="tmproot"
-AIC_IMG="$1"
-AIC_FUNC="$2"
-AIC_ARG1="$3"
-AIC_ARG2="$4"
-AIC_ARG3="$5"
-AIC_ARG4="$6"
-AIC_ARG5="$7"
-AIC_ARG6="$8"
-AIC_ARG7="$9"
-AIC_ARG8="$10"
+AIC_IMG="${1}"
+AIC_FUNC="${2}"
+AIC_ARG1="${3}"
+AIC_ARG2="${4}"
+AIC_ARG3="${5}"
+AIC_ARG4="${6}"
+AIC_ARG5="${7}"
+AIC_ARG6="${8}"
+AIC_ARG7="${9}"
+AIC_ARG8="${10}"
+
+
+#echo "img $AIC_IMG"
+#echo "func $AIC_FUNC"
+#echo "arg1 $AIC_ARG1"
+#echo "arg2 $AIC_ARG2"
+#echo "arg3 $AIC_ARG3"
+#echo "arg4 $AIC_ARG4"
+#echo "arg5 $AIC_ARG5"
+#echo "arg6 $AIC_ARG6"
+#echo "arg7 $AIC_ARG7"
+#echo "arg8 $AIC_ARG8"
 
 source lib/help.func.sh
 source lib/core.func.sh
