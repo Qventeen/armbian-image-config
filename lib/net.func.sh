@@ -55,7 +55,7 @@ set_wifi_static () {
 	mount_image
 
 	mkdir -p "$AIC_MNT"/etc/NetworkManager/system-connections
-	NMCONF=`cat lib/wifi-dhcp.tmpl | sed -e "s/TMPLSSID/$AIC_ARG2/g" -e "s/TMPLKEY/$AIC_ARG3/g" -e "s/TMPLIP/$AIC_ARG4/g" -e "s/TMPLMASK/$AIC_ARG5/g" -e "s/TMPLGW/$AIC_ARG6/g" -e "s/TMPLDNS/$AIC_ARG7/g" -e "s/TMPLSEARCH/$AIC_ARG8/g"`
+	NMCONF=`cat lib/wifi-static.tmpl | sed -e "s/TMPLSSID/$AIC_ARG2/g" -e "s/TMPLKEY/$AIC_ARG3/g" -e "s/TMPLIP/$AIC_ARG4/g" -e "s/TMPLMASK/$AIC_ARG5/g" -e "s/TMPLGW/$AIC_ARG6/g" -e "s/TMPLDNS/$AIC_ARG7/g" -e "s/TMPLSEARCH/$AIC_ARG8/g"`
 	echo $NMCONF > "$AIC_MNT"/etc/NetworkManager/system-connections/wifi
 	chmod 600 "$AIC_MNT"/etc/NetworkManager/system-connections/wifi
 	
